@@ -1,0 +1,94 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicatoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Fondo romántico */
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+        }
+        h1, p {
+            font-size: 20px;
+        }
+
+        /* Imágenes de prueba usando recursos locales */
+        .heart {
+            width: 50px; /* Tamaño fijo */
+            height: 50px; /* Tamaño fijo */
+            position: absolute;
+            display: block;
+        }
+        .heart1 { top: -30px; left: -30px; }
+        .heart2 { top: -30px; right: -30px; }
+        .heart3 { bottom: -30px; left: -30px; }
+        .heart4 { bottom: -30px; right: -30px; }
+        .heart5 { top: 50%; left: -50px; transform: translateY(-50%); }
+        .heart6 { top: 50%; right: -50px; transform: translateY(-50%); }
+
+        .button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #e85a50;
+        }
+        /* Estilo de la carta */
+        .carta {
+            background-color: #f7e1b5; /* color beige */
+            border: 2px solid #c68c53; /* borde marrón */
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+            display: none; /* Inicialmente oculto */
+            font-size: 18px;
+            text-align: left;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Corazones con imágenes locales -->
+        
+        <h1>Para Camila</h1>
+        <button class="button" onclick="mostrarCarta()">Dale a este boton bb</button>
+        
+        <!-- Carta oculta que se mostrará al hacer clic -->
+        <div class="carta" id="carta">
+            <p>Hola Camila, mi amor.
+            <p>Sé que todavía no somos nada pero igual me expresaré, sabes desde que te conocí siempre me pareciste agradable, y poco a poco esa amistad fue convirtiéndose en algo más. La verdad es que no me arrepiento de haberte dicho que me gustas, igualmente salió bien porque al final yo también te gusté. Pero esta carta no es para recordar eso, es para que sepas que si sigues conmigo por mucho tiempo, sabrás quién soy realmente y sabrás que haría todo lo que fuera por la persona que amo, un ejemplo es esta página.</p>
+            <p>Te quería decir que te amo muchísimo, desde aquí a la luna, de la luna al sol, del mar al desierto, de China a Brasil. Y supongo que quedó claro, pero mi amor no se expresa con palabras, sino con acciones.</p>
+            <p>Espero que pasemos mucho tiempo juntos, quién sabe y duramos hasta el momento en que nos digan, "hasta que la muerte los separe", eso solo lo sabe el destino, y espero que el destino lo haga realidad.</p>
+            <p>Con todo esto te quiero resumir con una palabra lo que realmente siento por ti: "amor". Eso eres para mí, eso siento por ti, y espero que sientas lo mismo por siempre.</p>
+            <p><strong>Con amor,</strong></p>
+            <p><strong>Tu persona especial❤️</strong></p>
+        </div>
+    </div>
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").style.display = "block";  // Muestra la carta
+        }
+    </script>
+</body>
+</html>
